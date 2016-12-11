@@ -1,0 +1,339 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400');
+
+/* Remove default browser margins and padding */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.hero {
+   color: white;
+   background-color: #112333; /*fallback if the background image isn't there*/
+   background-image: url('../images/PostItsBackground.png');
+   background-position: center;
+   width: 100%;
+   height: auto;
+}
+
+  .nav-right-nav-list {
+    text-align: right;
+    padding-right: 30px;
+  }
+
+.hero-content {
+  padding: 10px;
+  padding-top: 220px;
+  padding-bottom: 220px;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.button {
+  display: inline-block;
+  padding: 0 28px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 25px;
+  background-color: #34699A;
+  color: white;
+  border: none;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.nav {
+  background-color: white;
+  padding: 18px 0;
+  width: 100%;
+  top: 0;
+  height: 60px;
+  font-weight: bold;
+}
+
+.nav-right {
+  float: right;
+  padding-right: 40px;
+}
+
+.nav-content {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.nav-right {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-right__item {
+  display: inline-block;
+}
+
+.nav-right__item {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  color: #B4B4B4;
+  color:  #B4B4B4;
+  cursor: pointer; /* Tells the browser that the cursor should be a pointer on hover */
+}
+
+.nav-right__item .ucsd-button {
+  padding: 0 20px;
+  margin: 0 10px;
+  color: white;
+  height: 40px;
+}
+
+.cardholder {
+  margin: auto;
+  width: 80%;
+  padding-right: auto;
+  padding-left: auto;
+  margin-top: 50px;
+}
+
+.card {
+  padding: 10px;
+  display: inline-block;
+  margin: auto;
+  width: 49%;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.card:hover img{
+  opacity: 0.8;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+
+html {
+  font-size: 14px;
+}
+
+
+.test {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.info {
+  max-width: 1100px;
+  margin: 0px; 
+  padding: 0 15px; 
+}
+
+.half {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.half-content {
+  font-size: 16px;
+  color: #5c6772;
+  padding-right: 15px;
+  line-height: 170%;
+  font-weight: 300;
+}
+
+.half-content-heading {
+  font-weight: 100;
+  font-size: 42px;
+}
+
+.computer-image {
+  width: 100%;
+}
+
+p a {
+  font-weight:900;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.card a:visited {
+  color: #B4B4B4;
+}
+
+
+.nav li:hover {
+  color: black;
+}
+
+.footer-container {
+  font-size: 16px;
+  display: block;
+  padding-left: 7%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.footer-name {
+  font-weight: bold;
+  display: inline;
+  margin-right: 5px;
+}
+
+.copyright {
+  float: right;
+  padding-right: 7%; 
+}
+
+
+.section-header {
+  color: #00529D;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.section-subtitle {
+  color: #B4B4B4;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#Hi {
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headshot-image {
+  float: right;
+  clear: left;
+  width: 50%;
+  margin-left:15px;
+}
+
+.about {
+  font-size: 16px;
+  color: #5c6772;
+  padding-right: 15px;
+  line-height: 170%;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+/* Media Query: hides copyright info, expands cardholder to 95% width, adapts font sizes to smaller screen. */
+@media screen and (max-width: 799px) {
+  .copyright {
+    display: none;
+  }
+  .cardholder {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+
+/* Hides footer and case study descriptions, centers navigation, expands cardholder to 100% width, adapts font sizes to smaller screen. */
+@media screen and (max-width: 499px) {
+  .footer-container {
+    display: none;
+  }
+
+  .cardholder {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .nav-right__item {
+  font-size: 12px;
+  }
+
+  .nav-right-nav-list {
+    text-align: center;
+  }
+
+  .card-text {
+    display: none;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .section-header {
+    font-size: 20px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-left: -10px;
+    text-align: center;
+  }
+
+  .headshot-image {
+  float: none;
+  clear: left;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+}
